@@ -13,8 +13,9 @@ body {
 }
 
 header {
-  background-color: #2e2a3d; /* dark header for contrast */
-  border-bottom: 1px solid #403d52;
+  /* Updated header colors for a warmer, more inviting look */
+  background-color: #4c3d73; /* medium plum tone */
+  border-bottom: 1px solid #634a95;
   padding: 1rem;
   position: sticky;
   top: 0;
@@ -32,12 +33,12 @@ header .container {
 header nav a {
   margin-right: 1.5rem;
   text-decoration: none;
-  color: #e0d7ff; /* lighter text for dark header */
+  color: #f3e8ff; /* lighter lavender text for plum header */
   font-weight: bold;
 }
 
 header nav a:hover {
-  color: #ffb347; /* warm accent on hover */
+  color: #ffd166; /* golden accent on hover */
 }
 
 /* Hero section with gentle gradient to draw attention */
@@ -113,21 +114,7 @@ header nav a:hover {
   margin-bottom: 0.75rem;
 }
 
-/* Call‑to‑action buttons use a bright contrasting orange */
-.product-card .product-info button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #ff5722;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.product-card .product-info button:hover {
-  background-color: #e64a19;
-}
+/* Removed old call-to-action button styles (redefined later) */
 
 footer {
   background-color: #f8f8f8;
@@ -139,4 +126,26 @@ footer {
 
 footer p {
   margin-bottom: 0.5rem;
+}
+
+/* Style the site title for better contrast on the new header */
+header .logo h1 {
+  color: #f3e8ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Soften the call-to-action buttons with a warmer orange */
+.product-card .product-info button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f57c00; /* updated orange for high traffic appeal */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.product-card .product-info button:hover {
+  background-color: #e66a00;
 }
