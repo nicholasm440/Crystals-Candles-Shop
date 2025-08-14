@@ -1,0 +1,142 @@
+/* Basic reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header {
+  background-color: #2e2a3d; /* dark header for contrast */
+  border-bottom: 1px solid #403d52;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #e0d7ff; /* lighter text for dark header */
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #ffb347; /* warm accent on hover */
+}
+
+/* Hero section with gentle gradient to draw attention */
+.hero {
+  background: linear-gradient(to right, #fdf1f1, #fff6e7);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #2e2a3d;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.product-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.product-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #444;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  display: block;
+}
+
+.product-card .product-info {
+  padding: 1rem;
+}
+
+.product-card .product-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.product-card .product-info .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #27ae60; /* green to evoke prosperity and balance */
+  margin-bottom: 0.75rem;
+}
+
+/* Call‑to‑action buttons use a bright contrasting orange */
+.product-card .product-info button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-card .product-info button:hover {
+  background-color: #e64a19;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #666;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
